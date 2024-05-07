@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "发送到Obsidian",
+    "version": "1.0",
+    "description": "将选中的文本发送到Obsidian",
+    "permissions": ["contextMenus", "activeTab", "scripting", "storage", "webRequest"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

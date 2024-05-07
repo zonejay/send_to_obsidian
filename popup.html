@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Config</title>
+    <style>
+        /* 添加一些基本的样式 */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Obsidian config</h3>
+    <label for="url">URL:</label>
+    <input type="text" id="url" />
+
+    <label for="token">Token:</label>
+    <input type="text" id="token" />
+
+    <label for="workspace">Workspace:</label>
+    <input type="text" id="workspace" />
+
+    <label for="folder">Folder:</label>
+    <input type="text" id="folder" />
+
+    <button id="save">保存</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
