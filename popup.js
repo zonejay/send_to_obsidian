@@ -4,6 +4,7 @@ const tokenInput = document.getElementById("token");
 const workspaceInput = document.getElementById("workspace");
 const folderInput = document.getElementById("folder");
 const saveButton = document.getElementById("save");
+const cancel = document.getElementById("cancel");
 
 // 加载现有配置
 chrome.storage.sync.get(["obsidianConfig"], (result) => {
@@ -27,5 +28,20 @@ saveButton.addEventListener("click", () => {
     chrome.storage.sync.set({ obsidianConfig: config }, () => {
         console.log("Obsidian配置已保存");
         // 可选择在这里显示保存成功的消息给用户
+        window.close()
     });
 });
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+    if (tokenInput.type === 'password') {
+        tokenInput.type = 'text';
+        this.textContent = 'Hide Token';
+    } else {
+        tokenInput.type = 'password';
+        this.textContent = 'Show Token';
+    }
+});
+
+cancel.addEventListener("click", () => {
+    window.close();
+})

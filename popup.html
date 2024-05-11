@@ -9,6 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             padding: 10px;
+            width: 300px;
         }
         label {
             display: block;
@@ -29,8 +30,10 @@
     <label for="url">URL:</label>
     <input type="text" id="url" />
 
-    <label for="token">Token:</label>
-    <input type="text" id="token" />
+    <label for="token">Token:
+        <input type="password" id="token" />
+        <button id="toggleButton">Show Token</button>
+    </label>
 
     <label for="workspace">Workspace:</label>
     <input type="text" id="workspace" />
@@ -38,7 +41,10 @@
     <label for="folder">Folder:</label>
     <input type="text" id="folder" />
 
-    <button id="save">保存</button>
+    <div class="">
+        <button id="save">Save</button>
+        <button id="cancel">Cancel</button>
+    </div>
 
     <script src="popup.js"></script>
 </body>
