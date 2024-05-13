@@ -1,49 +1,43 @@
-# 发送到 Obsidian
+# Send to Obsidian
 
-这是一个 Chrome 插件，用于将网页中选中的文本发送到 Obsidian 笔记应用中。您可以使用该插件将网页上的内容直接保存到您的 Obsidian 笔记中，以便您更好地管理和组织信息。
+[[中文](./README_zh_cn.md)]
 
-## 功能
+This is a Chrome extension that allows you to send selected text from web pages to the Obsidian note-taking app. With this extension, you can directly save content from web pages to your Obsidian notes for better organization and management of information.
 
-- **将选中文本发送到 Obsidian**：在网页上选择文本，然后右键单击，选择“发送到 Obsidian”选项，所选文本将转换为 Markdown 格式并发送到 Obsidian。
-- **配置 Obsidian 信息**：在插件弹出窗口中，您可以配置 Obsidian 的 URL、Token、工作空间和文件夹路径，以便将选中文本保存到特定位置。
-- **支持 HTML 转 Markdown**：插件会将选中的 HTML 文本转换为 Markdown 格式，以确保内容以干净、可读的方式存储到 Obsidian。
+## Features
 
-## 使用方法
+- **Send Selected Text to Obsidian**: Select text on a web page, then right-click and choose the "Send to Obsidian" option. The selected text will be converted to Markdown format and sent to Obsidian.
+- **Configure Obsidian Information**: In the extension popup, you can configure the URL, Token, workspace, and folder path of Obsidian, so that selected text can be saved to specific locations.
+- **Support HTML to Markdown**: The extension will convert the selected HTML text to Markdown format to ensure that content is stored in Obsidian in a clean and readable way.
 
-1. **安装插件**：从GitHub下载源码, 浏览器扩展页面打开开发者模式, 点击加载已解压的扩展程序,选择下载的源码。
+## Usage
 
-2. **配置 Obsidian**：点击插件图标，打开弹出窗口。在弹出窗口中，输入 Obsidian 的 URL、Token、工作空间和文件夹路径。这些配置信息将用于将文本发送到 Obsidian。
+1. **Install the Extension**: Install the "Send to Obsidian" extension from the Chrome Web Store.
+2. **Configure Obsidian**: Click on the extension icon to open the popup. In the popup, input the URL, Token, workspace, and folder path of Obsidian. These configuration details will be used to send text to Obsidian.
+3. **Select Text on Web Page**: Use your mouse to select the text you want to save to Obsidian.
+4. **Right-click on Text**: Right-click on the selected text and choose the "Send to Obsidian" menu item.
+5. **Wait for Sending to Complete**: The extension will convert the selected text to Markdown format and send it to Obsidian. You can check the sending status through console logs.
 
-3. **在网页上选择文本**：在网页上使用鼠标选择您想要保存到 Obsidian 的文本。
+## Configuration
 
-4. **右键单击文本**：在所选文本上右键单击，选择“发送到 Obsidian”菜单项。
+Configure the following information in the popup:
 
-5. **等待发送完成**：插件会将所选文本转换为 Markdown 格式，并发送到 Obsidian。您可以通过控制台日志查看发送状态。
+- **URL**: The API URL of Obsidian.
+- **Token**: The Token used for authorization.
+- **Workspace**: The workspace where you want to send the text.
+- **Folder Path**: The folder path where you want to save the text.
 
-## 配置
+Make sure to input the configuration information correctly and have sufficient permissions to access the Obsidian API.
 
-在弹出窗口中配置以下信息：
+## Notes
 
-- **URL**：Obsidian 的 API URL。
-- **Token**：用于授权的 Token。
-- **工作空间**：您希望将文本发送到的工作空间。
-- **文件夹路径**：您希望将文本保存到的文件夹路径。
+- **Security**: Ensure the Token is kept confidential and input correct information in the configuration popup.
+- **Permissions**: The extension may require access to web page and network permissions to send data to Obsidian.
 
-请确保输入的配置信息正确，并有足够的权限访问 Obsidian API。
+## Feedback and Support
 
-## 注意事项
+If you encounter any issues or have any suggestions while using the extension, please contact us through the feedback button on the extension page.
 
-- **安全**：确保 Token 保密，并在配置弹出窗口中输入正确的信息。
-- **权限**：插件可能需要访问网页和网络权限，以便将数据发送到 Obsidian。
+## License
 
-## TODO
-- [ ] 选择文字转为md
-- [ ] 图片支持
-
-## 反馈与支持
-
-如果您在使用插件时遇到问题或有任何建议，请通过插件页面的反馈按钮联系我们。
-
-## 许可证
-
-此项目基于 [MIT 许可证](LICENSE)发布。
+This project is licensed under the [MIT License](LICENSE).
